@@ -410,7 +410,7 @@
           <blockquote class="blockquote">
             
             <p>
-              Vytvořte v JS funkci, která zajistí, náhodnou změnu obrázků po 3 sekundách: <b>nepodařilo se mi</b>
+              Vytvořte v JS funkci, která zajistí, náhodnou změnu obrázků po 3 sekundách:
             </p>
           </blockquote>
           <div class="bg-info p-3">
@@ -418,15 +418,8 @@
           </div>
           <script>
             const foto = document.getElementById('foto');
-            //nepodařilo se mi
-            
-            /*while (1)
-            {
-              setInterval(function funkce() { foto.setAttribute('src', 'img/hrad.webp'); }, 3000);
-              setInterval(function funkce() { foto.setAttribute('src', 'img/praga.webp'); }, 3000);
-              setInterval(function funkce() { foto.setAttribute('src', 'img/staromak.webp'); }, 3000);
-              setInterval(function funkce() { foto.setAttribute('src', 'img/vltava.webp'); }, 3000);
-            }*/
+            fotky = ['./img/hrad.webp', './img/praha.jpg', './img/staromak.jpg', './img/vltava.jpg',]
+              setInterval(function funkce() { foto.src = fotky[Math.floor(Math.random() * 4)] }, 3000);
           </script>
         </div>
       </div>      
